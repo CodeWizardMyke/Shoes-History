@@ -1,0 +1,258 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap');
+
+/*Corpo inteiro da pagina*/
+*{
+    box-sizing: border-box;
+    font-family: 'open Sans';
+}
+html{
+    background-color: rgba(92, 88, 88, 0.384);
+}
+body{
+    width: 100%;
+    margin: 0 auto 40px auto;
+    padding: 0px;
+}
+.containerChefe{
+    width: 70%;
+    margin: 0 auto;
+    background-color: #ffff;
+}
+
+/*header e seus itens */
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+header .dp-menu{
+    display: none;
+}
+header .logo{
+    width: 250px;
+}
+/*formatando o menu principal da pagina*/
+header nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+header nav ul li{
+    display: inline-block;
+}
+header nav li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15pt;
+    font-weight: 600;
+    padding: 10px;
+    color: black;
+
+}
+header nav li a:hover{
+    transition: background-color 1s;
+    background-color: #c2185c86;
+    border-radius: 15px;
+
+}
+
+/*menu hamburguer animação*/
+
+nav.dp-menu li span:hover img {
+    -webkit-transform: scale(1.2);
+}
+nav.dp-menu li img {
+    display: none;
+}
+/*drop down menu*/
+nav.dp-menu{
+    position: relative;
+    display: block;
+    margin: 10px;
+ }
+ .dp-menu ul ul {
+     right: -10px;
+     position: absolute;
+ }
+ .dp-menu ul li ul{
+     display: none;
+
+ }
+ .dp-menu ul ul{
+     width: max-content;
+  
+ }
+ .dp-menu ul ul li{
+     display: flex;
+     flex-direction: column;
+     background-color: #ffff;
+
+ }
+ .dp-menu ul ul li a:hover{
+    -webkit-transform: scale(1.2);
+ }
+ .dp-menu ul ul li a {
+     margin: 5px;
+     display:block;
+     text-align: end;
+ }
+
+/*FOTO DE DESTAQUE LOGO ABAIXO DO HEADER*/
+section#destaque img{
+   width: 100%;
+}
+
+/*SESSAO DE FOTO ALINHADA LADO A LADO UMA MAIOR Q A OUTRA*/
+section#estilo{
+    text-align: center;
+    font-size: 18pt;
+    margin-bottom: 150px;
+    padding: 15px 30px;
+
+}
+section#estilo img#foto1{
+    width: 35%;
+    height: 35%;
+}
+section#estilo img#foto2{
+    width: 50%;
+}
+section#estilo div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*BLOCOS DE LINKS COM ANUNCIOS DO SITE*/
+
+section#off{
+    text-align: center;
+    background-color: #C2185B;
+    padding: 20px 0;
+}
+section#off h2{
+    color: #ffff;
+}
+section#off div#offContainer{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 30px;
+   
+}
+section#off a {
+    width: 23%;
+    margin: 5px;
+    background-color: #ffff;
+    text-decoration: none;
+    color: black;
+}
+section#off img{
+    width: 100%;
+}
+div#offContainer div{
+    padding: 15px 5px;
+} 
+section#off span.nome{
+    font-weight: 600;
+    font-size: 12pt;
+}
+section#off span.preco{
+    display: flex;
+}
+
+/*produto destaque*/
+
+section#produto-destaque{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+}
+
+div.modeloEsquerdo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+    margin: 20px;
+}
+div.sub-model{
+   font-size: 18pt;
+}
+.sub-model a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #ffff;
+    width: 60%;
+    height: 100px;
+    background-color: #C2185B;
+    font-size: 36px;
+}
+
+img.imagemMetade{
+    margin-top: 5px;
+    width: 100%;
+}
+img.imagemCheia{
+    width: 100%;
+    height: 100%;
+}
+div.modeloDireito{
+    width: 40%;
+    margin: 20px;
+}
+
+
+/*aplicação para o footer inteiro*/
+footer{
+    display: flex ;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #C2185B;
+}
+
+/* aplicação para logo da pagina e o parágrafo*/
+footer section{
+    margin: 20px auto;
+    color: white;
+}
+section.contatos{
+    width: 20%;
+}
+
+.contatos p {
+    margin: 0;
+}
+
+section#links{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    flex-direction: row;
+}
+footer section ul {
+    list-style: none;
+    height: max-content;
+  
+}
+footer article span{
+    font-weight: 900;
+    font-size: 15pt;
+}
+footer section ul li a{
+    text-decoration: none;
+    color: white;
+
+}
+footer section ul li:hover{
+    -webkit-transform: scale(1.3);
+}

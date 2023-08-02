@@ -1,0 +1,160 @@
+
+@media screen and (max-width : 1600px) {
+    div.containerChefe{
+        width: 80%;
+    }
+    
+}
+@media screen and (max-width : 1500px) {
+    div.containerChefe{
+        width: 85%;
+    }
+    
+}
+@media screen and (max-width : 1400px) {
+    div.containerChefe{
+        width: 90%;
+    }
+    
+}
+
+@media screen and (max-width : 1300px) {
+    div.containerChefe{
+        width: 95%;
+    }
+    
+}
+@media screen and (max-width : 1200px) {
+    nav.menu-desktop{
+        display: none;
+     }
+     .dp-menu ul li:hover ul{
+         display: block;
+     }
+     nav.dp-menu li img {
+         display: block;
+         z-index: 100;
+     }
+     img.logo{
+        width:  150px;
+     }
+    div.containerChefe{
+        width: 100%;
+    }
+    div.modeloEsquerdo{
+        width: 45%;
+    }
+    div.sub-model{
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+    }
+    div.modeloDireito{
+        width: 55%;
+    }
+    
+}
+
+@media screen and (max-width : 900px){
+
+   section#estilo div{
+    display: flex;
+    flex-direction: column;
+   }
+   section#estilo img#foto1{
+    width: 80vw;
+    margin: 20px auto;
+   }
+   section#estilo img#foto2{
+    width: 70vw;
+    margin: 20px auto;
+   }
+
+   /*modelo painel de destaque*/
+
+   section#produto-destaque{
+    flex-direction: column;
+    padding: 0;
+   }
+   div.modeloEsquerdo{
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+   }
+   div.modeloDireito{
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+   }
+   .sub-model a{
+    width: 400px;
+    height: 90px;
+    font-size: 26px;
+   }
+
+   /*novos parametros para o footer*/
+   
+   footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+
+   section.contatos{
+    width: 60%;
+   }    
+
+   section#links{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    width: 100%;
+   }
+
+   article.categorias{
+    width: 45%;
+   }
+
+   article.institucional{
+    width: 45%;
+   }
+}
+
+@media screen and (max-width : 700px){
+
+    /*produtos off*/
+
+    div#offContainer{
+        flex-wrap: wrap;
+    }
+
+    div#offContainer a{
+       width: 45%;
+    }
+    /*footer da pagina*/
+
+    section.contatos img {
+        width: 100%;
+    }
+    footer section#links  { 
+        align-items: flex-start;
+        width: max-content;
+        justify-content: center;
+        flex-direction: column;
+        width: max-content;
+    }
+    footer article ul {
+        width: 300px;
+    }
+ 
+}
+@media screen and (max-width: 500px) {
+
+    div.sub-model a{
+        width: 60%;
+    }
+    
+}
